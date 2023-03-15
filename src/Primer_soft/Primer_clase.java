@@ -1,13 +1,17 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
-package Primer_soft;
 
-/**
- *
- * @author Tincho y Sofi
- */
+package Primer_soft;
+import javax.swing.JOptionPane;
 public class Primer_clase {
+    
+  public static void main(String[] args) {
+      String nombre;
+       nombre = JOptionPane.showInputDialog("Diga su nombre: ");
+       JOptionPane.showMessageDialog(null,"hola " + nombre + " un gusto");
+      
+   
+   
+  }   
+       
+    
     
 }
