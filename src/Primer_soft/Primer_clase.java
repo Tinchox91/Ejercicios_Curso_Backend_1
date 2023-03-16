@@ -4,11 +4,9 @@ import javax.swing.JOptionPane;
 public class Primer_clase {
     
   public static void main(String[] args) {
-      String nombre;
-       nombre = JOptionPane.showInputDialog("Diga su nombre: ");
-       JOptionPane.showMessageDialog(null,"hola " + nombre + " un gusto");
+      ejercicio_2 ejer1 = new ejercicio_2();
       
-   
+      ejer1.ingresarNombre();
    
   }   
        
