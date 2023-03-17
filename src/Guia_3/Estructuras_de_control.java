@@ -93,7 +93,65 @@ public class Estructuras_de_control {
                
       
 }
-
+                       public void menu()
+                   
+           
+    {
+        int num1,num2,op,total;
+        char s='N';
+        
+        boolean s1=false;
+        Scanner leer = new Scanner(System.in);
+     System.out.println("ingresa dos numeros enteros positivos: ");
+     num1= leer.nextInt();
+     num2= leer.nextInt();
+     do{
+         
+        System.out.println("Elija opcion: ");
+        System.out.println("1.sumar");
+        System.out.println("2.restar");
+        System.out.println("3.multiplicar");
+        System.out.println("4.dividir");
+        System.out.println("5.Salir");
+        op= leer.nextInt();
+        switch (op) {
+            case 1:
+                total= num1+num2;
+                System.out.println("la suma es "+total);
+                break;
+                        case 2:
+                total= num1-num2;
+                System.out.println("la resta es "+total);
+                break;
+                        case 3:
+                total= num1*num2;
+                System.out.println("la multiplicacion es "+total);
+                break;
+                        case 4:
+                total= num1/num2;
+                System.out.println("la division es "+total);
+                break;
+                        case 5:
+               
+                System.out.println("Desea salir? S/N);");
+                        s = leer.next().charAt(0);
+                       if (s == 'S' || s == 's') {
+                           s1= true ;
+                           }
+                       else{
+                           s1= false;
+                       }
+                           
+                        
+                break;
+                        default :
+                            System.out.println("Opcion ivalida");
+        }
+     
+    
+     }while (s1==false);     
+      
+}
 
     public static void main(String[] args) {
         Estructuras_de_control ej1 = new Estructuras_de_control();
@@ -101,8 +159,10 @@ public class Estructuras_de_control {
          Estructuras_de_control ej3 = new Estructuras_de_control();
          Estructuras_de_control ej4 = new Estructuras_de_control();
          Estructuras_de_control ej5 = new Estructuras_de_control();
+         Estructuras_de_control ej6 = new Estructuras_de_control();
         int op;
-        Scanner leer = new Scanner (System.in);         
+        Scanner leer = new Scanner (System.in);     
+        
         
         
         
@@ -126,6 +186,9 @@ public class Estructuras_de_control {
             case 5:
              ej5.bucle1();
             break;
+            case 6:
+                ej6.menu();
+                break;
 
 
         	default:
