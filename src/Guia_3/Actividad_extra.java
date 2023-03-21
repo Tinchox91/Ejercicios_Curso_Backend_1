@@ -252,7 +252,7 @@ public class Actividad_extra {
         
         }
         
-public void division(){
+public  void division(){
     int n1,n2,total,cont;
     Scanner leer= new Scanner(System.in);
     System.out.println("ingrese dos numeros");
@@ -288,7 +288,7 @@ public void adivina(){
     }while (!val);
     
 }
-public truncado(){
+public void truncado(){
     
     
 }
