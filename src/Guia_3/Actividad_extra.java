@@ -288,10 +288,64 @@ public void adivina(){
     }while (!val);
     
 }
-public void truncado(){
-    
+
+public static void numeros(){
+    Scanner leer = new Scanner(System.in);
+            System.out.println("Ingrese un numero");
+            int num = leer.nextInt();
+            String num2 = Integer.toString(num);
+            int longi = num2.length();
+            System.out.println("El numero tiene "+longi+" digitos" );
+            
     
 }
+public static void contador(){
+    int a,e,i,c;
+    String c1;
+    c1= "E";
+    for (i=0;i<10;i++){
+        for (e=0;e<10;e++){
+            for (a=0;a<10;a++){
+                if (i==3){
+                    System.out.print(c1+"-");
+                    
+                }else System.out.print(i+"-");
+                if (e==3){
+                    System.out.print("-"+c1+"-");
+                }else System.out.print("-"+e+"-");
+                 if (a==3){
+                    System.out.print("-"+c1+"\n");
+                }else System.out.print("-"+a+"\n");
+            }
+        }
+        
+    }
+    
+}
+public static void escalera(){
+    Scanner leer = new Scanner(System.in);
+    boolean val;
+    String v;
+    val=false;
+    while (!false){
+    System.out.println("ingrese numero:");
+    int num =leer.nextInt();
+    int i;
+    String n;
+    n="";
+    for (i=1;i<num+1;i++){
+        n=n+Integer.toString(i);
+        System.out.println(n);
+    }
+        System.out.println("quiere continuar?S/N");
+        v= leer.next();
+        if (v.equalsIgnoreCase("n")|| v.equalsIgnoreCase("N")){
+            val=true;
+        }
+    }
+    
+}
+        
     public static void main(String[] args) {
         Actividad_extra ej1 = new Actividad_extra();
         Actividad_extra ej2 = new Actividad_extra();
@@ -316,6 +370,9 @@ public void truncado(){
         System.out.println("8.multiplo de 5");
         System.out.println("9.Division con restas");
         System.out.println("10.adivina!");
+        System.out.println("11.numero de digitos de un entero");
+        System.out.println("12.contador");
+        System.out.println("13.Escalera");
         int op = leer.nextInt();
 
         switch (op) {
@@ -346,6 +403,15 @@ public void truncado(){
                 ej9.division();
             case 10:
                 ej10.adivina();
+            case 11:
+                numeros();
+                break;
+            case 12:
+                contador();
+                break;
+            case 13:
+                escalera();
+                break;
             default:
                 System.out.println("OPCION INVALIDA!");
         }
