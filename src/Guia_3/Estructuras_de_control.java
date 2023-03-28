@@ -232,6 +232,14 @@ public class Estructuras_de_control {
         
         
         System.out.println("indica la opcion: ");
+        System.out.println("indica la opcion:1.par o impar ");
+        System.out.println("indica la opcion:2.comparar ");
+        System.out.println("indica la opcion:3. 8 letras ");
+        System.out.println("indica la opcion:4.frase ");
+        System.out.println("indica la opcion:5. bucle ");
+        System.out.println("indica la opcion:6.menu ");
+        System.out.println("indica la opcion:7. rs232 ");
+        System.out.println("indica la opcion: 8. cuadrado ");
  op = leer.nextInt();
  switch (op) {
         	case 1:

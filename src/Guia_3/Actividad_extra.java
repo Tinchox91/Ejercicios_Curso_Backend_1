@@ -345,6 +345,21 @@ public static void escalera(){
     }
     
 }
+public static void media_hijos() {
+    Scanner leer = new Scanner (System.in);
+    System.out.println("ingrese la cantidad de familias");
+    int family = leer.nextInt();
+    int i,prom,cont,hijos;
+    cont=0;
+        for (i=0;i<family;i++){
+            System.out.println("ingrese la cantidad de hijos");
+            hijos= leer.nextInt();
+            cont=cont+hijos;
+    }
+        prom=cont/family;
+        System.out.println("la media de hijos de las familias es: "+prom);
+    
+}
         
     public static void main(String[] args) {
         Actividad_extra ej1 = new Actividad_extra();
@@ -373,6 +388,7 @@ public static void escalera(){
         System.out.println("11.numero de digitos de un entero");
         System.out.println("12.contador");
         System.out.println("13.Escalera");
+        System.out.println("14.Calcular la media de hijos");
         int op = leer.nextInt();
 
         switch (op) {
@@ -412,6 +428,8 @@ public static void escalera(){
             case 13:
                 escalera();
                 break;
+            case 14:
+                media_hijos();
             default:
                 System.out.println("OPCION INVALIDA!");
         }
